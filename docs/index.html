@@ -388,16 +388,16 @@ This reproducible <a href="https://rmarkdown.rstudio.com">R Markdown</a> analysi
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomLucianoRogerioWorkFlowRExampletreeb015c57df4a05c45628e7892b5bd75ec76d125f9targetblankb015c57a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/LucianoRogerio/WorkFlowRExample/tree/b015c57df4a05c45628e7892b5bd75ec76d125f9" target="_blank">b015c57</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomLucianoRogerioWorkFlowRExampletree8a2e457672c49b7a80a7896a62681741bd8b6b23targetblank8a2e457a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/LucianoRogerio/WorkFlowRExample/tree/8a2e457672c49b7a80a7896a62681741bd8b6b23" target="_blank">8a2e457</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomLucianoRogerioWorkFlowRExampletreeb015c57df4a05c45628e7892b5bd75ec76d125f9targetblankb015c57a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomLucianoRogerioWorkFlowRExampletree8a2e457672c49b7a80a7896a62681741bd8b6b23targetblank8a2e457a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/LucianoRogerio/WorkFlowRExample/tree/b015c57df4a05c45628e7892b5bd75ec76d125f9" target="_blank">b015c57</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/LucianoRogerio/WorkFlowRExample/tree/8a2e457672c49b7a80a7896a62681741bd8b6b23" target="_blank">8a2e457</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -406,9 +406,6 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-
-Untracked files:
-    Untracked:  analysis/WorkFlowRExample.Rmd
 
 Unstaged changes:
     Modified:   analysis/index.Rmd
@@ -450,6 +447,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/LucianoRogerio/WorkFlowRExample/blob/8a2e457672c49b7a80a7896a62681741bd8b6b23/analysis/index.Rmd" target="_blank">8a2e457</a>
+</td>
+<td>
+LucianoRogerio
+</td>
+<td>
+2022-03-16
+</td>
+<td>
+Create the WorkFlowR example for NextGen course
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/LucianoRogerio/WorkFlowRExample/8a2e457672c49b7a80a7896a62681741bd8b6b23/docs/index.html" target="_blank">8a2e457</a>
+</td>
+<td>
+LucianoRogerio
+</td>
+<td>
+2022-03-16
+</td>
+<td>
+Create the WorkFlowR example for NextGen course
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -503,7 +534,7 @@ My first R code at this project will be at this [git hub page](PCA.html)</code><
 <pre class="r"><code>install.packages(&quot;reshape2&quot;, repos = &quot;https://cloud.r-project.org&quot;)</code></pre>
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/33/g0c9br3d0rx_bvhf9jsc0t9mcdw1j5/T//RtmpEddkrs/downloaded_packages</code></pre>
+    /var/folders/33/g0c9br3d0rx_bvhf9jsc0t9mcdw1j5/T//RtmpYF7esB/downloaded_packages</code></pre>
 <pre class="r"><code>library(reshape2); library(tidyverse)</code></pre>
 <pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
 <pre><code>✓ ggplot2 3.3.5     ✓ purrr   0.3.4
@@ -530,7 +561,45 @@ head(dataMelted)</code></pre>
 <pre class="r"><code>dataMelted %&gt;% ggplot(aes(x = Species, y = y, fill = Species)) +
      geom_boxplot() + facet_wrap(~trait, scales = &quot;free_y&quot;) +
      theme(legend.position = &quot;none&quot;)</code></pre>
-<p><img src="figure/index.Rmd/Iris%20traits%20Box%20plots-1.png" width="672" style="display: block; margin: auto;" /> <br></p>
+<p><img src="figure/index.Rmd/Iris%20traits%20Box%20plots-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-Iris-traits-Box-plots-1">
+Past versions of "Iris traits Box plots-1.png"
+</button>
+</p>
+<div id="fig-no-spaces-Iris-traits-Box-plots-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/LucianoRogerio/WorkFlowRExample/blob/8a2e457672c49b7a80a7896a62681741bd8b6b23/docs/figure/index.Rmd/Iris traits Box plots-1.png" target="_blank">8a2e457</a>
+</td>
+<td>
+LucianoRogerio
+</td>
+<td>
+2022-03-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br></p>
 <p>Great data, we can see a lot of differences between the <code>Species</code> for these traits. It seems that we may have some correlation between <code>Petal Length</code> and <code>Width</code>. We also have different amplitude for these traits this will certainly results in different <code>phenotypic variance</code> between the traits, so we need to <code>scale</code> these traits before the PCA.</p>
 <pre class="r"><code>DataSc &lt;- data %&gt;% select(-Species) %&gt;%
      scale(x = ., center = TRUE, scale = TRUE) %&gt;%
@@ -603,9 +672,83 @@ head(ScoresSpecies)</code></pre>
         ylab = &quot;Cumulative variance (%)&quot;, xlab = &quot;Number of retained PCs&quot;,
         col = c(&quot;red&quot;, &quot;red&quot;, &quot;gray&quot;, &quot;gray&quot;, &quot;gray&quot;))</code></pre>
 <p><img src="figure/index.Rmd/Barplot%20PCs-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-Barplot-PCs-1">
+Past versions of "Barplot PCs-1.png"
+</button>
+</p>
+<div id="fig-no-spaces-Barplot-PCs-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/LucianoRogerio/WorkFlowRExample/blob/8a2e457672c49b7a80a7896a62681741bd8b6b23/docs/figure/index.Rmd/Barplot PCs-1.png" target="_blank">8a2e457</a>
+</td>
+<td>
+LucianoRogerio
+</td>
+<td>
+2022-03-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p><br></p>
 <p>R markdown allows us to hide the code that create the figure, this could be done adding the argument <code>echo = FALSE</code> inside the curly brackets at the chunk. Using <code>echo</code> argument will print just the result of you chunk, link below.</p>
 <p><img src="figure/index.Rmd/Barplot%20PCs2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-Barplot-PCs2-1">
+Past versions of "Barplot PCs2-1.png"
+</button>
+</p>
+<div id="fig-no-spaces-Barplot-PCs2-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/LucianoRogerio/WorkFlowRExample/blob/8a2e457672c49b7a80a7896a62681741bd8b6b23/docs/figure/index.Rmd/Barplot PCs2-1.png" target="_blank">8a2e457</a>
+</td>
+<td>
+LucianoRogerio
+</td>
+<td>
+2022-03-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p><br></p>
 <p>The last figure will be a scatter plot of the individuals with their score for the first two PCs with the correlation of the traits with the first two PCs.</p>
 <pre class="r"><code>ggplot(data = ScoresSpecies, aes(x = PC1, y = PC2, color = Species)) +
@@ -620,9 +763,47 @@ head(ScoresSpecies)</code></pre>
   theme_bw() +
   xlab(paste(&quot;PC1 - &quot;, round(Perc[1], digits = 2), &quot;%&quot;, sep = &quot;&quot;)) +
      ylab(paste(&quot;PC2 - &quot;, round(Perc[2], digits = 2), &quot;%&quot;, sep = &quot;&quot;))</code></pre>
-<p><img src="figure/index.Rmd/Scatter%20plot%20PCA-1.png" width="672" style="display: block; margin: auto;" /> <br></p>
+<p><img src="figure/index.Rmd/Scatter%20plot%20PCA-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-Scatter-plot-PCA-1">
+Past versions of "Scatter plot PCA-1.png"
+</button>
+</p>
+<div id="fig-no-spaces-Scatter-plot-PCA-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/LucianoRogerio/WorkFlowRExample/blob/8a2e457672c49b7a80a7896a62681741bd8b6b23/docs/figure/index.Rmd/Scatter plot PCA-1.png" target="_blank">8a2e457</a>
+</td>
+<td>
+LucianoRogerio
+</td>
+<td>
+2022-03-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br></p>
 <p>This is the final results of the PC. Mostly of the variance explained by the 1˚PC is due to the between species <code>Setosa</code> Vs <code>Versicolor</code> and <code>Virginica</code>. The 2˚PC just explain variance within the species. Also the traits <code>Petal Length</code>, <code>Petal Width</code> and <code>Sepal Length</code> could be used to discriminate the species.</p>
-<p>Now you just have to commit these new updates, follow the steps at this <a href="https://wolfemd.github.io/GenomicSelectionManual/create_project.html">link</a>.</p>
+<p>Now you just have to commit these new updates, follow the steps at this <a href="https://wolfemd.github.io/GenomicSelectionManual/create_project.html#using-workflowr">link</a>.</p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
